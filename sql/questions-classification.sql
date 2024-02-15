@@ -122,7 +122,9 @@ where credit_rating in ("Medium","High")
 group by 1;
 
 # In the database, which all types of communication (mailer_type) were used and with how many customers? 17976
-# ??????????
+select mailer_type, count(*) as customers_count
+from credit_card_data
+group by 1;
 
 
 # Provide the details of the customer that is the 11th least Q1_balance in your database.
